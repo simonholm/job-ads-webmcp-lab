@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job ads · WebMCP experiment</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">WebMCP experiment</p>
+    <h1>Job ads by date</h1>
+    <p>Current Data/IT ads from Örebro län, fetched from JobTech. Filter by publication date, including both end dates.</p>
+    <form id="date-range" novalidate>
+      <label>From date <input id="from-date" name="from_date" type="date" value="2026-08-27" required></label>
+      <label>To date <input id="to-date" name="to_date" type="date" value="2026-08-31" required></label>
+      <button id="show-ads" type="submit">Show job ads</button>
+    </form>
+    <p id="error" role="alert"></p>
+    <p id="summary" role="status">Choose a date range and show job ads.</p>
+    <ul id="results" aria-label="Matching job ads"></ul>
+    <p id="webmcp-status" class="muted" role="status">Checking WebMCP support…</p>
+    <p class="muted">Current ads only, not a historical archive. Searches read JobTech data and never change it.</p>
+  </main>
+</body>
+</html>

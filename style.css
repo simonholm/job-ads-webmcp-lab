@@ -1,0 +1,19 @@
+:root { font-family: system-ui, sans-serif; color: #182b36; background: #f4f6f7; line-height: 1.5; }
+body { margin: 0; }
+main { max-width: 760px; margin: 3rem auto; padding: 0 1.25rem; }
+h1 { margin: .25rem 0; line-height: 1.2; }
+.eyebrow { color: #28645e; font-weight: 650; }
+form { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; margin: 2rem 0 1rem; }
+label { display: grid; gap: .4rem; font-weight: 600; }
+input, button { font: inherit; padding: .65rem .8rem; border: 1px solid #71818b; border-radius: .3rem; }
+input { background: white; color: inherit; }
+button { background: #205d55; color: white; cursor: pointer; }
+button:disabled { opacity: .5; cursor: wait; }
+:focus-visible { outline: 3px solid #326abd; outline-offset: 3px; }
+#error { color: #a02025; font-weight: 600; }
+#error:empty { display: none; }
+ul { list-style: none; padding: 0; }
+li { padding: 1rem; margin-bottom: .75rem; background: white; border: 1px solid #d3dde1; border-radius: .3rem; overflow-wrap: anywhere; }
+h2 { font-size: 1.1rem; margin: 0 0 .5rem; }
+li p { margin: .3rem 0; }
+.muted { color: #52636d; font-size: .9rem; }
